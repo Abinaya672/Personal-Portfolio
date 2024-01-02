@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abinaya-portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="style.css">
+     <!-- =====BOX ICONS===== -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="#">ABINAYA</span></a>
+          <ul class="menu-links">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#images">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+          <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+      <div class="floating-contact-form">
+        <div class="form-container">
+          <h3>Reach me Out!</h3>
+  
+          <form action="#">
+            <div class="field-container">
+              <i class="fas fa-signature"></i>
+              <label for="name">Name</label>
+              <input class="form-input" type="text" id="name" />
+            </div>
+  
+            <div class="field-container">
+              <i class="fas fa-envelope"></i>
+              <label for="email">Email</label>
+              <input class="form-input" type="text" id="email" />
+            </div>
+  
+            <div class="field-container">
+              <i class="far fa-sticky-note"></i>
+              <label for="message">Message</label>
+              <textarea
+                class="form-input"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+  
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+  
+        <div class="contact-icon">
+         
+          <i class="fas fa-comments"></i>
+          <p>Contact me!</p>
+        </div>
+      </div>
+      <section class="hero-section">
+        <div class="content">
+          <h2>ABINAYA N</h2>
+          <h3>Software Developer
+          </h3>
+          <div class="ellipse-1" ></div>
+        <div class="ellipse-2"></div>
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/abinaya-n-ab3108225" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://abinaya672.wordpress.com/" class="home__social-icon"><i class='bx bxl-wordpress' ></i></a>
+            <a href="https://github.com/Abinaya672" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            <a href="https://instagram.com/_princess._.pride_?igshid=MzNlNGNkZWQ4Mg" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
+        </div>
+          <p>Click here to view my Resume</p>
+     <a href="Abinaya-N_Resume.pdf"><button>View</button></a>
+  
+        </div>
+
+      
+      </section>
+      <footer class="footer">
+        <p class="footer__title">Abinaya</p>
+        <div class="footer__social">
+            <a href="https://instagram.com/_princess._.pride_?igshid=MzNlNGNkZWQ4Mg" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://twitter.com/Abinaya256?t=EZuvYBQ6yE1ij-OIQSW-iA&s=09" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; . All rigths reserved</p>
+    </footer>
+
+      <script>
+       
+
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+  
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+  
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+      </script>
+       <script src="main.js"></script>
+</body>
+</html>
