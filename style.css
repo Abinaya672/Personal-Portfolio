@@ -160,7 +160,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 20px;
     z-index: 100;
   }
