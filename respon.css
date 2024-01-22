@@ -496,7 +496,7 @@
       box-sizing: border-box;
       }
   .desktop-1 {
-      width: 414px;
+      width: 100vw;
       height: 896px;
       position: relative;
       overflow: hidden;
