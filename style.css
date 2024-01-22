@@ -339,7 +339,7 @@ img {
   
   #hamburger-btn {
     color: #fff;
-    margin-right: 6%;
+    right: 6%;
     cursor: pointer;
     display: none;
   }
