@@ -2,6 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import "compass/css3";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+
 :root{
 --main-font : "Bungee Hairline";
 --sec-font: "Lato";
@@ -145,15 +156,15 @@ img {
       gap: 30px;
     }
     
-    .home__social-icon {
+    .home__social-icon i {
       width: max-content;
       margin-bottom: 1rem;
       font-size: 2rem;
       color: white;
     }
     
-    .home__social-icon:hover {
-      color: #0f080b;
+    .home__social-icon i:hover {
+      color: #0ec7c4;
     }
   header {
     background-color: #000;
@@ -339,6 +350,7 @@ img {
   
   #hamburger-btn {
     color: #fff;
+    margin-right: 6%;
     cursor: pointer;
     display: none;
   }
@@ -359,7 +371,7 @@ img {
     }
     .floating-contact-form .contact-icon p{
       -webkit-text-stroke: 0.2px black;
-      text-shadow: 0px 0px 6px rgb(77, 156,164);
+      text-shadow: 0px 0px 6px rgb(77, 156, 164);
     }
     .floating-contact-form .contact-icon i:hover {
     transform: scale(1.1);
@@ -929,9 +941,11 @@ text-align: center;
     top: 556px;
     }
     .experience{
-      padding-bottom: 80px;
+      padding-top: 80px;
   }
-  
+  .experience h2{
+    text-align: center;
+  }
   .timeline{
       flex: 0 0 100%;
       max-width: 100%;
@@ -1040,98 +1054,212 @@ text-align: center;
       line-height: 26px;
       margin: 15px 0 0;
   }
-/***** service-section *****/
-
-.service-section{
-  padding: 80px 0px 80px;
-  min-height: 100vh;
+  .scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(6, 43, 54);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
 }
 
+/* Add this to your style.css file */
+.services {
+  background: transparent;
+  padding: 80px 0;
+  text-align: center;
+}
 
-.service-section .service-item{
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 15px;
+.title {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.serv-content {
   display: flex;
   flex-wrap: wrap;
-  transform-style: preserve-3d;
-  transform: perspective(1000px);
+
+  justify-content: space-around;
 }
 
-.service-section .service-item-inner{
-  padding: 50px 15px;
+.serv-content .card {
+  max-width: calc(28% - 10px);
+  height: 15rem;
   text-align: center;
+  background: black;
+  box-shadow: 0px 0px 20px #2fd4d4;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
   border-radius: 5px;
-  width: 100%;
-  transform: translateZ(20px)
-}
-
-.service-section .service-item-inner:hover h3, p{
-  /* color: #e1e1ff; */
-  color: var(--text-black-600);
-  text-shadow: 1px var(--text-black-900);
-}
-
-.service-section .service-item-inner:hover .icon i{
-  color: var(--skin-color);
-}
-
-.service-section .service-item-inner:hover .icon{
-  box-shadow: var(--inner-shadow-0);
-}
-
-.service-section .service-item-inner:hover .icon:after{
-  box-shadow: var(--outer-shadow);
-}
-
-
-.service-section .service-item-inner .icon{
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50%;
   transition: all 0.3s ease;
-  display: block;
-  margin: 0 auto 30px;
-  position: relative;
-  color: var(--text-black-600);
+overflow: hidden; 
 }
 
-.service-section .service-item-inner .icon::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+.card:hover{
+  background: #0b3263;
+
+}
+ .card .box{
   transition: all 0.3s ease;
 }
-
-.service-section .service-item-inner .icon i{
+.card:hover .box{
+  transform: scale(1.05);
+}
+ .card i{
+  font-size: 50px;
+  color: rgb(73, 207, 241);
+  transition: color 0.3s ease;
+}
+ .card:hover i{
+  color: #fff;
+}
+ .card .text{
   font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease;    
+  color:white;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+.box {
+  padding: 20px;
 }
 
-
-.service-section .service-item-inner h3{
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--text-black-700);
+i {
+  font-size: 48px;
+  color: #3498db;
+  margin-bottom: 15px;
 }
 
-.service-section .service-item-inner p{
-  font-size: 17px;
-  color: var(--text-black-600);
-  margin: 0;
-  line-height: 26px;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: bold;
+.text {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1em;
+  color: #a6a4a4;
+}
+.portfolio-section .title{
+  padding-top: 6rem;
+  text-align: center;
   
 }
-/***** End service-section *****/
+.cont {
+  position : relative;
+  width : 100vw;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  flex-wrap : wrap;
+  padding : 30px;  
+}
+
+.cont .card {
+  position: relative;
+  max-width : 350px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 30px 15px;
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.cont .card:hover {
+  height : 320px;    
+}
 
 
+.cont .card .image {
+  position : relative;
+  max-width : 260px;
+  max-height: 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
 
-   
+.cont .card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.cont .card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.cont .card:hover .content {
+   margin-top : 30px;
+   visibility : visible;
+   opacity : 1;
+   width: auto;
+   margin-left: auto;
+   margin-right: auto;
+   transition-delay: 0.2s;
+  
+  
+}
+.cont .card:hover .content p{
+  color: #070404;
+}
+
+/* ===== FOOTER =====*/
+.footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 2rem;
+  margin-bottom:2rem;
+}
+
+.footer__social {
+  margin-bottom: 2rem;
+}
+
+.footer__icon i{
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 1rem;
+}
+
+.footer__copy {
+  font-size: .75rem;
+}
