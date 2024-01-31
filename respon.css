@@ -1,4 +1,4 @@
-@media screen and (max-width:820px) {
+@media screen and (max-width:767px) {
     .hero-section .home-image .img-box{
       max-width: 300px;
       box-shadow: 0px 0px 40px #2fd4d4;
@@ -46,15 +46,6 @@
     max-width: 600px;
     line-height: 70px;
   }
-  .floating-contact-form .contact-icon p{
-    color: antiquewhite;
-    text-shadow: 3px 3px black;
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'Inter-bold' ,'sans-serif' ;
-    padding-bottom: 2px;
-  }
-  
   .hero-section .content h3 {
     color: #80d0e6;
    
@@ -487,21 +478,33 @@
     top: calc(50% - -232px);
     }
   }
+.skil{
+visibility: hidden;
 
+}
 
 
 
   @media (max-width: 480px) {
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
     .desktop-1, .desktop-1 * {
       box-sizing: border-box;
       }
   .desktop-1 {
       width: 100vw;
-      height: 100vh;
+      min-height: 100vh;
       position: relative;
+      margin-top: 10px;
       overflow: hidden;
       }
-  
+      
+  .desktop-1 .skil{
+ visibility: hidden;
+  }
  
   
    .frame-1 {
