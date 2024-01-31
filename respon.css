@@ -485,7 +485,7 @@ visibility: hidden;
 
 
 
-  @media (max-width: 320px) {
+  @media (max-width: 480px) {
     .section-title {
       text-align: center;
       font-size: 2rem;
