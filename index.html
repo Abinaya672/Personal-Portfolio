@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abinaya-N_Portfolio</title>
-     <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="respon.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
@@ -18,13 +17,15 @@
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 </head>
 <body>
-
+  <div class="scroll-up-btn">
+    <i class="fas fa-angle-up"></i>
+</div>
 <header>
         <nav class="navbar">
           <a class="logo" href="#">ABINAYA</span></a>
           <ul class="menu-links">
             <span id="close-menu-btn" class="material-symbols-outlined">close</span>
-           <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -94,26 +95,42 @@
             </div>
         </section>
 
-            <section class="about-section section" id="about">
-              <div class="container">
-                <div class="row">
-                  <div class="section-title">
-                    <div class="data-heading">Main Info</div>
-                    <h2>About Me</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="about-img">
-                    <div class="img-box inner-shadow">
-                 
-                    </div>
-                  </section>
+            
+    <!-- about section  -->
+    <section class="about-section section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <div class="data-heading">MAIN INFO</div>
+            <h2>About me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box inner-shadow">
+              <img src="./img/profile-pic.png" alt="" class="outer0shadow">
+            </div>
+            <!-- social icons -->
+            </div>
+          <div class="about-info">
+            <p class="about-info-inner">
+              <!-- content will fetch from  "TODO: js/autoTypingAnimation " -->
+            </p>
+            <!-- this is a just demo text  -->
 
+             <span>Hi, this is a demo name</span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eius officia ea ut vonsectetur adipisicing elit. Illo voluptatum iste, tempora rem obcaecati omnis delectus sunt, consequuntur, et ut quasi aperiam assumenda! <br><br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex beatae reprehenderit vero maiores dignissimos error vitae, optio inventore explicabo quia officiis magni delectus? -->
 
-<!--Skills-->
+            <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
+          </div>
+        </div>
+           <!--Skills-->
+           <div class="section-title">
+            <div class="data-heading" style="padding-top: 90px;">Technical</div>
+            <h2>Skills</h2>
 <section class="desktop-1"  id="skills">
-  <h2>
-Skills </h2>
+   
+   
   <div class="frame-1" >
         <div class="group-2" >
               <div class="r-1" >
@@ -183,13 +200,16 @@ SQL </div>
 </div>
 </section>
 
-
+   
         <!-- experience  -->
-     
+     <section>
         <div class="row" id="experience">
-         
-          <div class="experience tab-content">
-       <h2>Experience</h2>
+          
+          <div class="experience">
+            <div class="section-title">
+              <div class="data-heading">Internships and Volunteering</div>
+              <h2>Experience</h2>
+            </div>
             <div class="row">
               <div class="timeline">
                 <div class="row">
@@ -244,43 +264,48 @@ SQL </div>
           </div>
         </div>
         <!--experience end -->
-                      <!-- services section start -->
+     </section>
+
+       <!-- services section start -->
     <section class="services" id="services">
-      <div class="max-width">
-          <h2 class="title">My services</h2>
+      <div class="max">
+        <div class="section-title">
+          <div class="data-heading">What do i offer?</div>
+          <h2>Services</h2>
+        </div>
           <div class="serv-content">
               <div class="card">
                   <div class="box">
-                    <div class="icon inner-shadow">
+                  
                       <i class="fas fa-palette"></i>
-                    </div>
+                   
                       <div class="text">Web Design</div>
                       <p>I specialize in creating visually captivating websites that mirror your brand identity. From responsive layouts to intuitive user experiences, I craft designs that leave a lasting impact.</p>
                   </div>
               </div>
               <div class="card">
                   <div class="box">
-                    <div class="icon inner-shadow">
+                    
                       <i class="fas fa-mobile-alt"></i>
-                    </div>
+                   
                       <div class="text">Ui Ux design</div>
                       <p>Transforming ideas into intuitive user experiences with my UI/UX design service using Figma. I specialize in crafting visually appealing interfaces that prioritize user satisfaction and engagement. Collaborate with me to bring your vision to life.</p>
                   </div>
               </div>
               <div class="card">
                 <div class="box">
-                  <div class="icon inner-shadow">
+                 
                     <i class="fas fa-laptop-code"></i>
-                  </div>
+              
                     <div class="text">Responsive Design</div>
                     <p> I focus on crafting websites that seamlessly adapt to various devices, ensuring optimal viewing for your audience. Harness the power of responsiveness to enhance user engagement and stay ahead in the digital landscape.</p>
                 </div>
             </div>
             <div class="card">
               <div class="box">
-                  <div class="icon inner-shadow">
+                  
                     <i class="fas fa-code"></i>
-                  </div>
+                 
                   <div class="text">Programming</div>
                   <p>I bring expertise in writing efficient and organized code, ensuring your software not only functions flawlessly but is also maintainable and scalable</p>
               </div>
@@ -294,9 +319,9 @@ SQL </div>
         </div>
               <div class="card">
                   <div class="box">
-                    <div class="icon inner-shadow">
+                   
                       <i class="fas fa-bullhorn"></i>
-                    </div>
+                  
                       <div class="text">Blog creation</div>
                       <p>Elevate your online voice with my blog creation service, whether it's on WordPress or Medium. From crafting engaging content to designing a visually appealing layout, I'm here to bring your unique perspective to life.</p>
                   </div>
@@ -308,8 +333,12 @@ SQL </div>
 
 <!--Portfolio section-->
 <section class="portfolio-section" id="portfolio">
-  <h2 class="title" >Portfolio<br>
-    My Works</h2>
+  <div class="section-title">
+    <div class="data-heading">My works</div>
+    <h2>Portfolio</h2>
+  </div>
+   
+  
   <div class = cont>
     
     <div class = card>
@@ -382,6 +411,73 @@ SQL </div>
 </div>
 </section> 
       
+ <!-- ========== Start contact section ========== -->
+ <section class="contact-section section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <div class="data-heading">contact</div>
+        <h2>Get In Touch</h2>
+      </div>
+    </div>
+    <div class="row">
+   
+      <!-- ========== Start contact item ========== -->
+      <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-envelope">
+            <span class="contact-span">Email Address</span>
+            <p class="contact-p">abinaya natarajan2517 @gmail.com</p>
+          </i>
+        </div>
+      </div>
+      <!-- ========== End contact item ========== -->
+      <!-- ========== Start contact item ========== -->
+      <div class="contact-item contact-card" data-tilt data-tilt-axis="x" data-tilt data-tilt-scale="1.1">
+        <div class="contact-item-inner outer-shadow">
+          <i class="fas fa-map-marker-alt">
+            <span class="contact-span">Address</span>
+            <p class="contact-p">Villupuram, TamilNadu</p>
+          </i>
+        </div>
+      </div>
+      <!-- ========== End contact item ========== -->
+    </div>
+    <!-- ========== Start contact from ========== -->
+    <div class="row">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/xzblerag" method="post" class="contact__form">
+          <div class="row">
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input class="input-control" type="text" name="name" id="name" placeholder="Name" required>
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input class="input-control" type="email" name="email" id="sender" placeholder="email" required>
+              </div>
+              <div class="input-group outer-shadow hover-in-shadow">
+                <input class="input-control" type="tel" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+            </div>
+            <div class="w-50">
+              <div class="input-group outer-shadow hover-in-shadow">
+                <textarea class="input-control" name="user_dtls" id="user_dtls" required placeholder="Type here..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="submit-btn">
+              <button class="btn-1 outer-shadow outer-shadw hover-in-shadow submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ========== End contact from ========== -->
+  </div>
+</section>
+<!-- ========== End contact section ========== -->
+
   <!--===== FOOTER =====-->
   <footer class="footer">
     <p class="footer__title">Abinaya</p>
@@ -391,20 +487,6 @@ SQL </div>
     </div>
     <p class="footer__copy">&#169; . All rigths reserved</p>
 </footer>
-      
-
-
-
-      <div class="main-page page">
-        <section class="main-page-content">
-          <h1></h1>
-          <h2></h2>
-        </section>
-      </div>
-    
-     
-      
-      
       <!-- THE UNIVERSE. Code adapted from https://codepen.io/Acuetouag/pen/vOgmza -->
       
       <div class="universe">
@@ -524,6 +606,24 @@ SQL </div>
       </div>
      <script>
   //Scrolling animation triggering...
+// Get all elements with the class "service-item-inner"
+const serviceItems = document.querySelectorAll('.service-item-inner');
+
+// Add event listeners to each service item
+serviceItems.forEach((serviceItem) => {
+  serviceItem.addEventListener('mouseover', () => {
+    // Add the "hover" class to the service item when hovered
+    serviceItem.classList.add('hover');
+  });
+
+  serviceItem.addEventListener('mouseout', () => {
+    // Remove the "hover" class when the mouse leaves the service item
+    serviceItem.classList.remove('hover');
+  });
+});
+
+
+
   const group2 = document.querySelector('.group-2');
   const group3 = document.querySelector('.group-3');
 
@@ -561,5 +661,24 @@ SQL </div>
         closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
      </script>
       <script src="main.js"></script>
+      
+       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js'></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".contact-card"), {
+        max: 25,
+        speed: 400
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".link-card"), {
+        max: 25,
+        speed: 400
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".card")),{
+        max: 25,
+        speed: 300
+      };
+    </script>
 </body>
 </html>
