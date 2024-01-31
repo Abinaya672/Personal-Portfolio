@@ -116,10 +116,8 @@
     }
 
 
- .r-1 {
-    margin-left: auto;
-    margin-right: auto;
-    background:  transparent;
+    .r-1{
+   background:  transparent;
     border-radius: 25px;
     border-style: solid;
     border-color:black;
@@ -299,6 +297,9 @@
     margin-right: auto;
     inset: 0;
     }
+    
+
+
 
  .r-4 {
   margin-left: auto;
@@ -520,12 +521,7 @@ visibility: hidden;
       position: absolute;
       inset: 0;
       }
-.group-2,
-    .group-3 {
-        opacity: 0;
-        transform: translateX(-90px);
-    }
-  }
+
       
   .r-9{
     background:  transparent;
