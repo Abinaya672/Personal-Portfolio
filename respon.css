@@ -517,12 +517,19 @@ visibility: hidden;
       top: calc(50% - 239px);
       }
   
-   .group-2 {
-      position: absolute;
-      inset: 0;
-      }
+   ..group-2,
+    .group-3 {
+        opacity: 1; /* Set initial styles for mobile view */
+        transform: translateX(0);
+        transition: none; /* Remove the transition for mobile view */
+    }
+}
 
-      
+.group-2.active,
+.group-3.active {
+    opacity: 1;
+    transform: translateX(0);
+}     
   .r-9{
     background:  transparent;
     border-radius: 25px;
@@ -675,10 +682,7 @@ visibility: hidden;
     .canva{
       visibility: hidden;
     }
-   .group-3 {
-      position: absolute;
-      inset: 0;
-      }
+   
       
 
     .r-10{
