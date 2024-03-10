@@ -580,6 +580,7 @@
   .desktop-1 {
       width: 100vw;
       min-height:80vh;
+      overflow:hidden;
       position: relative;
       margin-top: 10px;
       box-sizing: border-box;
