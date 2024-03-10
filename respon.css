@@ -578,7 +578,7 @@
       box-sizing: border-box;
       }
  .desktop-1 {
-      width: 100%; 
+      width: 100vw; 
       min-height: auto;
       position: relative;
       margin-top: 60px; 
