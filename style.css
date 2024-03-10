@@ -379,10 +379,8 @@ img {
       margin-top: 20px;
     }
   
-    
-  
-    
-    
+ 
+   
   .hero-section .content button {
     background: #fff;
    font-weight: bold;
@@ -456,7 +454,8 @@ img {
 
 .about-section .about-img{
   flex: 0 0 40%;
-  max-width: 40%;
+  max-width: 400px;
+  max-height: 350px;
   padding: 0 15px;
 
 }
@@ -905,12 +904,17 @@ visibility: hidden;
   top: calc(50% - 239px);
   }
 
-.group-2,
-.group-3 {
+  .group-2 {
+    opacity: 0;
+    transform: translateX(-90px);
+    transition: opacity 2s, transform 3s;
+}
+
+.group-2.active {
     opacity: 1;
     transform: translateX(0);
-    transition: opacity 1s, transform 1s;
 }
+
 
 
 .r-1 {
@@ -1094,7 +1098,16 @@ margin-right: auto;
   }
   
 
+.group-3 {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 2s, transform 3s;
+}
 
+.group-3.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .r-4 {
   margin-left: auto;
@@ -1281,8 +1294,10 @@ margin-right: auto;
 
 /* ===== FOOTER =====*/
 .footer {
+  background-color: #000;
+  position: relative;
   width: 100%;
-  background-color: black;
+  z-index: 100;
   color: #fff;
   text-align: center;
   font-weight: 600;
