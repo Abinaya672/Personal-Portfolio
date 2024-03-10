@@ -579,10 +579,8 @@
       }
   .desktop-1 {
       width: 100vw;
-      height: 100vh;
       position: relative;
       margin-top: 10px;
-      overflow: hidden;
       box-sizing: border-box;
       }
       
