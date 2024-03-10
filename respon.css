@@ -577,21 +577,15 @@
     .desktop-1, .desktop-1 * {
       box-sizing: border-box;
       }
-  .desktop-1 {
-      width: 100vw;
-      min-height:100vh;
+ .desktop-1 {
+      width: 100%; 
+      min-height: auto;
       position: relative;
-      margin-top: 10px;
-      overflow:hidden;
-      box-sizing: border-box;
-      }
-  .desktop-1{
-      width:100vw;
-      min-height:100vh;
-      position:relative;
-      margin-top:10px;
-      overflow:hidden;
-  }
+      margin-top: 60px; 
+      margin-bottom: 50px;
+      overflow: visible; 
+  
+    }
       
   .desktop-1 .skil{
  visibility: hidden;
