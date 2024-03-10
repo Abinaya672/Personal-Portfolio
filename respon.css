@@ -580,12 +580,18 @@
   .desktop-1 {
       width: 100vw;
       min-height:100vh;
-      overflow:hidden;
       position: relative;
       margin-top: 10px;
+      overflow:hidden;
       box-sizing: border-box;
       }
-      
+  .desktop-1{
+      width:100vw;
+      min-height:100vh;
+      position:relative;
+      margin-top:10px;
+      overflow:hidden;
+  }
       
   .desktop-1 .skil{
  visibility: hidden;
